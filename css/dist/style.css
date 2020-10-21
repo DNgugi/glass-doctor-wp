@@ -1,0 +1,116 @@
+/* Variables
+=====================================*/
+/* Main/Resets
+=====================================*/
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Yeseva One", cursive;
+}
+
+a:link {
+  color: #f4c63b;
+}
+
+a:link:hover {
+  color: #f44336;
+}
+
+a:visited {
+  color: #f4c63b;
+}
+
+a:active {
+  color: #f44336;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.orange-text {
+  color: #f4c63b !important;
+}
+
+.orange {
+  background-color: #fcc201 !important;
+}
+
+.black {
+  background-color: #1a1a1a !important;
+}
+
+.logo {
+  max-height: 95px;
+  width: auto;
+}
+
+nav {
+  height: 100px;
+}
+
+nav ul a {
+	padding: 15px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  padding-top: 10%;
+}
+.hero::after {
+  content: " ";
+  background-image: url("https://design.me.ke/GLASSDOCTOR/wp-content/uploads/2020/09/IMG-20200825-WA0079.jpg");
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+.hero__container {
+  padding: 1em;
+  display: grid;
+  align-items: center;
+}
+
+.card {
+  padding: 1em;
+  box-shadow: none;
+}
+
+
+/* Text meant only for screen readers. */
+.skip-link, .screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.contact-map{
+	margin-left: 2em;
+	padding: 1em;
+}

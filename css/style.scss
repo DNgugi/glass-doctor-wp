@@ -1,0 +1,124 @@
+ @import "_breakpoints.scss";
+ /* Variables
+=====================================*/
+$primary-color: #1a1a1a;
+$secondary-color: #fff;
+$background-color: #f2f2f2;;
+$highlight-background: #fcc201;
+$highlight-text: #f4c63b;
+$heading-font: 'Yeseva One', cursive;
+$body-font: 'Montserrat', sans-serif;
+$mobile-padding: 16px;
+$desktop-padding: 32px;
+
+/* Main/Resets
+=====================================*/
+
+html{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+body{
+  background-color: $background-color;
+  font-family: $body-font;
+ 
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $heading-font;
+}
+
+a:link{
+  color: $highlight-text;
+}
+
+a:link:hover {
+  color: #f44336;
+}
+
+a:visited {
+  color: $highlight-text ;
+}
+
+a:active {
+  color: #f44336;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+
+
+.orange-text {
+  color: $highlight-text !important;
+}
+
+.orange {
+  background-color:$highlight-background !important;
+}
+
+
+
+.black {
+  background-color: $primary-color !important;
+}
+
+.logo{
+  max-height: 95px;
+  width: auto;
+}
+nav{
+  height: 100px;
+}
+.hero{
+  position: relative; //So we can set pseudo background.
+  height: 100vh;
+  padding-top: 10%;
+
+  &::after{
+      content: " ";
+      background-image: url("https://design.me.ke/GLASSDOCTOR/wp-content/uploads/2020/09/IMG-20200825-WA0079.jpg");
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-origin: 50%;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      opacity: 0.5;
+  }
+
+  &__container{
+    padding: 1em;
+    display: grid;
+    align-items: center;
+  }
+
+  
+}
+
+.card{
+  padding: 1em;  
+  box-shadow: none;
+    
+}
+
+.feature{
+  &__image{
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+.feature__main{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  font-size: 1.4em;
+}
+
